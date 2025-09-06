@@ -1,21 +1,18 @@
-{% load static%}
-<!DOCTYPE html>
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portf </title>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
-    <link rel="stylesheet" href="{%static 'css/style.css'%}">
-    
-   
-    
+    <title>PortFolio </title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.jpeg' %}">
 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>`
+<body>
     
     <!-- Navbar Section -->
     <nav id="navbar" class="flex s-around bg-color">
@@ -52,7 +49,7 @@
         <div class="home-right flex s-center items-center">
             <div class="circle flex s-center items-center" id="mainImage">
                
-                <img src="{% static 'images/mypic.png'%}" alt="">
+                <img src="{% static 'images/mypic.png' %}" alt="">
             </div>
 
         </div>
@@ -64,7 +61,7 @@
         <div class="about-container flex s-around ">
             <div class=" about-left flex s-center items-center">
                 <!-- Here in src replade the given link with your secondary image link -->
-                <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%;">
+                <img src="{% static 'images/dog.png' %}" alt="" style="width: 60%;">
             </div>
 
             <div class="about-right flex">
@@ -83,7 +80,7 @@
         <h1 class="t-center my-2 t-white f-2">Skills</h1>
         <div class="services-container flex s-around h-50">
         <div class=" skills-left flex s-center items-center">
-            <img src="{%static 'images/pro.png'%}" alt="">
+           <img src="{% static 'images/pro.png' %}" alt="">
         </div>
 
         <div class="skills-right flex items-center">
